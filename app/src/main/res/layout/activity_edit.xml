@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Edit Bill"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Select Month"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/months" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Electricity Unit (kWh)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter 1 - 1000"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Rebate (%)"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioRebate0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:gravity="center"
+                android:tag="0"
+                android:text="0%" />
+
+            <RadioButton
+                android:id="@+id/radioRebate1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:gravity="center"
+                android:tag="1"
+                android:text="1%" />
+
+            <RadioButton
+                android:id="@+id/radioRebate2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:gravity="center"
+                android:tag="2"
+                android:text="2%" />
+
+            <RadioButton
+                android:id="@+id/radioRebate3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:gravity="center"
+                android:tag="3"
+                android:text="3%" />
+
+            <RadioButton
+                android:id="@+id/radioRebate4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:gravity="center"
+                android:tag="4"
+                android:text="4%" />
+
+            <RadioButton
+                android:id="@+id/radioRebate5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                android:gravity="center"
+                android:tag="5"
+                android:text="5%" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/success_green"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+</ScrollView>

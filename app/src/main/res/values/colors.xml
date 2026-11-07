@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+
+    <color name="success_green">#2E7D32</color>
+    <color name="danger_red">#C62828</color>
+
+    <color name="app_background">#F4F8FC</color>
+    <color name="result_card">#E3F2FD</color>
+    <color name="result_card_stroke">#BBDEFB</color>
+    <color name="label_gray">#5F6368</color>
+</resources>
